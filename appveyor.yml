@@ -12,7 +12,7 @@ install:
   - npm install
 
 build_script:
-  - npm run dist
+
   - name: Publish
     run: |
       npm run dist
