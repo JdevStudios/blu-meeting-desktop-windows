@@ -32,6 +32,8 @@ on_success:
   #- git rm -rf .
   
   # EDIT the origin of your repository - have to reset it here because AppVeyor pulls from SSH, but GitHub won't accept SSH pushes
+  - cd C:\projects\blu-meeting-desktop-windows
+  - dir
   - git remote set-url origin https://github.com/JdevStudios/blu-meeting-desktop-windows.git
   - git add -A
   - git commit -a -m "Commit from AppVeyor"
