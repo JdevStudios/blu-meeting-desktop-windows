@@ -13,3 +13,5 @@ install:
 
 build_script:
   - npm run dist
+env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
