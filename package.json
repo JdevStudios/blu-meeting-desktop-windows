@@ -1,9 +1,9 @@
 {
-  "name": "jitsi-meet-electron",
+  "name": "blu-meeting",
   "version": "2.2.0",
   "description": "Electron application for Jitsi Meet",
   "main": "./build/main.js",
-  "productName": "Jitsi Meet",
+  "productName": "bluMeeting",
   "scripts": {
     "start": "webpack --config ./webpack.main.js --mode development && concurrently \"npm:watch\" \"electron ./build/main.js\"",
     "clean": "rm -rf node_modules build dist",
@@ -17,7 +17,7 @@
   },
   "build": {
     "appId": "org.jitsi.jitsi-meet",
-    "productName": "Jitsi Meet",
+    "productName": "BluMeeting",
     "generateUpdatesFilesForAllChannels": true,
     "files": [
       "**/*",
@@ -33,15 +33,15 @@
       "entitlements": "entitlements.mac.plist",
       "entitlementsInherit": "entitlements.mac.plist",
       "extendInfo": {
-        "NSCameraUsageDescription": "Jitsi Meet requires access to your camera in order to make video-calls.",
-        "NSMicrophoneUsageDescription": "Jitsi Meet requires access to your microphone in order to make calls (audio/video)."
+        "NSCameraUsageDescription": "Blu Meeting requires access to your camera in order to make video-calls.",
+        "NSMicrophoneUsageDescription": "Blu Meeting requires access to your microphone in order to make calls (audio/video)."
       }
     },
     "linux": {
       "artifactName": "jitsi-meet-${arch}.${ext}",
       "category": "VideoConference;AudioVideo;Audio;Video;Network",
-      "description": "Jitsi Meet Desktop App",
-      "executableName": "jitsi-meet",
+      "description": "Blu Meeting Desktop App",
+      "executableName": "Blu-meeting",
       "target": [
         {
           "arch": "x64",
@@ -79,7 +79,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/jitsi/jitsi-meet-electron"
+    "url": "git://github.com/JdevStudios/blu-meeting-desktop-windows/"
   },
   "keywords": [
     "jingle",
@@ -88,7 +88,7 @@
     "electron",
     "jitsi-meet"
   ],
-  "author": "Jitsi Team <support@jitsi.org>",
+  "author": "Bluchat Team <support@jitsi.org>",
   "readmeFilename": "README.md",
   "license": "Apache-2.0",
   "dependencies": {
